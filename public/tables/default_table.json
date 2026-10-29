@@ -1,0 +1,891 @@
+{
+  "schema": "pinball-table",
+  "version": 1,
+  "name": "Magnum Classic",
+  "author": "Magnum Pinball",
+  "theme": {
+    "preset": "hyperdrive",
+    "primaryAccent": "#00f0ff",
+    "secondaryAccent": "#ff2288",
+    "centerTitle": "MAGNUM",
+    "archTitle": "★ ORBIT LOOP · BONUS MULTIPLIER LANES ★",
+    "cabinetTrim": "chrome"
+  },
+  "flippers": [
+    {
+      "id": "flipper_left",
+      "x": 16.5,
+      "y": 11.5,
+      "side": "left"
+    },
+    {
+      "id": "flipper_right",
+      "x": 35.3,
+      "y": 11.5,
+      "side": "right"
+    }
+  ],
+  "modules": [
+    {
+      "id": "pop_a",
+      "type": "PopBumper",
+      "x": 30,
+      "y": 72
+    },
+    {
+      "id": "pop_b",
+      "type": "PopBumper",
+      "x": 40,
+      "y": 78
+    },
+    {
+      "id": "pop_c",
+      "type": "PopBumper",
+      "x": 34,
+      "y": 60
+    },
+    {
+      "id": "sling_left",
+      "type": "Slingshot",
+      "x": 4.5,
+      "y": 31,
+      "params": {
+        "points": [
+          [0, 0],
+          [0, 15],
+          [10, 2.5]
+        ],
+        "face": [1, 2]
+      }
+    },
+    {
+      "id": "sling_right",
+      "type": "Slingshot",
+      "x": 47.3,
+      "y": 31,
+      "params": {
+        "points": [
+          [0, 0],
+          [0, 15],
+          [-10, 2.5]
+        ],
+        "face": [1, 2]
+      }
+    },
+    {
+      "id": "drop_bank_alpha",
+      "type": "DropTargetBank",
+      "x": 48.6,
+      "y": 50
+    },
+    {
+      "id": "spinner_arch",
+      "type": "Spinner",
+      "x": 49,
+      "y": 106.8,
+      "rotation": -49
+    },
+    {
+      "id": "inlane_left",
+      "type": "RolloverSwitch",
+      "x": 7.5,
+      "y": 24.5
+    },
+    {
+      "id": "inlane_right",
+      "type": "RolloverSwitch",
+      "x": 44.3,
+      "y": 24.5
+    },
+    {
+      "id": "ramp_entry",
+      "type": "RolloverSwitch",
+      "x": 14,
+      "y": 52
+    },
+    {
+      "id": "lane_gate",
+      "type": "Gate",
+      "x": 55.9,
+      "y": 88,
+      "rotation": 200,
+      "params": {
+        "length": 4.2,
+        "openDir": -1,
+        "openDeg": 80
+      }
+    },
+    {
+      "id": "lock_scoop",
+      "type": "KickoutHole",
+      "x": 44,
+      "y": 92,
+      "rotation": 135,
+      "params": {
+        "autoEject": 1.5,
+        "ejectSpeed": 200
+      }
+    },
+    {
+      "id": "ramp_arrow",
+      "type": "LightInsert",
+      "x": 14,
+      "y": 44,
+      "params": {
+        "shape": "arrow",
+        "size": 2.2,
+        "color": "#00FF88"
+      }
+    },
+    {
+      "id": "frenzy_lamp_a",
+      "type": "LightInsert",
+      "x": 22,
+      "y": 66,
+      "params": {
+        "size": 1.6,
+        "color": "#FF3366"
+      }
+    },
+    {
+      "id": "frenzy_lamp_b",
+      "type": "LightInsert",
+      "x": 45,
+      "y": 66,
+      "params": {
+        "size": 1.6,
+        "color": "#FF3366"
+      }
+    },
+    {
+      "id": "top_div_1",
+      "type": "LaneDivider",
+      "x": 17.5,
+      "y": 103,
+      "params": {
+        "length": 8.5,
+        "thickness": 0.7,
+        "color": "#00f0ff"
+      }
+    },
+    {
+      "id": "top_div_2",
+      "type": "LaneDivider",
+      "x": 24.5,
+      "y": 103,
+      "params": {
+        "length": 8.5,
+        "thickness": 0.7,
+        "color": "#ff2288"
+      }
+    },
+    {
+      "id": "top_lane_h",
+      "type": "RolloverSwitch",
+      "x": 14,
+      "y": 102,
+      "params": {
+        "radius": 1.1
+      }
+    },
+    {
+      "id": "top_lane_y",
+      "type": "RolloverSwitch",
+      "x": 21,
+      "y": 102,
+      "params": {
+        "radius": 1.1
+      }
+    },
+    {
+      "id": "top_lane_p",
+      "type": "RolloverSwitch",
+      "x": 28,
+      "y": 102,
+      "params": {
+        "radius": 1.1
+      }
+    },
+    {
+      "id": "top_target_left",
+      "type": "StandupTarget",
+      "x": 5.5,
+      "y": 92,
+      "rotation": -55,
+      "params": {
+        "width": 3.2,
+        "color": "#00f0ff",
+        "label": "H"
+      }
+    },
+    {
+      "id": "top_arch_banner",
+      "type": "ArcadeDecal",
+      "x": 21,
+      "y": 113,
+      "params": {
+        "variant": "plastic_card",
+        "width": 15,
+        "height": 3.0,
+        "color": "#00f0ff",
+        "label": "ORBIT LANES",
+        "sublabel": "2X BONUS"
+      }
+    },
+    {
+      "id": "outlane_div_left",
+      "type": "LaneDivider",
+      "x": 4.5,
+      "y": 23.5,
+      "params": {
+        "length": 9,
+        "thickness": 0.7,
+        "color": "#00f0ff"
+      }
+    },
+    {
+      "id": "outlane_div_right",
+      "type": "LaneDivider",
+      "x": 47.3,
+      "y": 23.5,
+      "params": {
+        "length": 9,
+        "thickness": 0.7,
+        "color": "#ff2288"
+      }
+    },
+    {
+      "id": "outlane_left",
+      "type": "RolloverSwitch",
+      "x": 2.2,
+      "y": 23.5,
+      "params": {
+        "radius": 1.1
+      }
+    },
+    {
+      "id": "outlane_right",
+      "type": "RolloverSwitch",
+      "x": 49.6,
+      "y": 23.5,
+      "params": {
+        "radius": 1.1
+      }
+    },
+    {
+      "id": "post_left_out",
+      "type": "BumperPost",
+      "x": 4.5,
+      "y": 48.5,
+      "params": {
+        "radius": 0.9,
+        "color": "#00f0ff"
+      }
+    },
+    {
+      "id": "post_right_out",
+      "type": "BumperPost",
+      "x": 47.3,
+      "y": 46.8,
+      "params": {
+        "radius": 0.9,
+        "color": "#ff2288"
+      }
+    },
+    {
+      "id": "mid_target_left",
+      "type": "StandupTarget",
+      "x": 3.2,
+      "y": 56,
+      "rotation": -90,
+      "params": {
+        "width": 3.2,
+        "color": "#ffcc00",
+        "label": "★"
+      }
+    },
+    {
+      "id": "center_saver_post",
+      "type": "BumperPost",
+      "x": 25.9,
+      "y": 5.2,
+      "params": {
+        "radius": 0.9,
+        "color": "#ff2266"
+      }
+    },
+    {
+      "id": "apron_wing_left",
+      "type": "ArcadeDecal",
+      "x": 0.4,
+      "y": 2,
+      "params": {
+        "variant": "apron_left",
+        "width": 14.8,
+        "height": 26,
+        "color": "#00f0ff",
+        "label": "MAGNUM",
+        "sublabel": "LEFT KICKBACK"
+      }
+    },
+    {
+      "id": "apron_wing_right",
+      "type": "ArcadeDecal",
+      "x": 51.4,
+      "y": 2,
+      "params": {
+        "variant": "apron_right",
+        "width": 14.8,
+        "height": 26,
+        "color": "#ff2288",
+        "label": "MULTIBALL",
+        "sublabel": "RIGHT GATE"
+      }
+    },
+    {
+      "id": "drain_shield_sign",
+      "type": "ArcadeDecal",
+      "x": 25.9,
+      "y": 0.8,
+      "params": {
+        "variant": "plastic_card",
+        "width": 11,
+        "height": 3.0,
+        "color": "#ff3366",
+        "label": "BALL SAVE",
+        "sublabel": "SHOOT AGAIN"
+      }
+    }
+  ],
+  "splines": [
+    {
+      "id": "left_ramp",
+      "kind": "ramp",
+      "layer": 1,
+      "width": 6,
+      "snapStart": "ramp_entry.out",
+      "segments": [
+        [
+          [14, 52, 0],
+          [14, 68, 2],
+          [18, 82, 8],
+          [30, 92, 8]
+        ]
+      ]
+    }
+  ],
+  "rules": {
+    "ballsPerGame": 3,
+    "initialState": "BaseMode",
+    "vars": {
+      "locks_lit": false,
+      "jackpots": 0
+    },
+    "states": {
+      "BaseMode": {
+        "label": "BASE MODE"
+      },
+      "SkillShotActive": {
+        "label": "SKILL SHOT",
+        "timer": 8,
+        "next": "BaseMode"
+      },
+      "JackpotFrenzy": {
+        "label": "JACKPOT FRENZY",
+        "timer": 20,
+        "next": "BaseMode"
+      },
+      "MultiballReady": {
+        "label": "MULTIBALL READY"
+      }
+    },
+    "rules": [
+      {
+        "id": "ball_start",
+        "when": {
+          "event": "ON_BALL_START"
+        },
+        "do": [
+          {
+            "type": "SET_STATE",
+            "state": "SkillShotActive"
+          },
+          {
+            "type": "SET_LAMP",
+            "lamp": "frenzy_lamp_a",
+            "pattern": "OFF"
+          },
+          {
+            "type": "SET_LAMP",
+            "lamp": "frenzy_lamp_b",
+            "pattern": "OFF"
+          },
+          {
+            "type": "SHOW_TEXT",
+            "text": "SKILL SHOT - SHOOT THE RAMP",
+            "seconds": 3
+          }
+        ]
+      },
+      {
+        "id": "skill_shot",
+        "when": {
+          "event": "ON_SWITCH_HIT",
+          "id": "left_ramp.entry"
+        },
+        "if": [
+          {
+            "lhs": "state",
+            "op": "==",
+            "rhs": "SkillShotActive"
+          }
+        ],
+        "do": [
+          {
+            "type": "ADD_SCORE",
+            "points": 50000
+          },
+          {
+            "type": "SHOW_TEXT",
+            "text": "SKILL SHOT!",
+            "seconds": 3
+          },
+          {
+            "type": "SET_STATE",
+            "state": "BaseMode"
+          },
+          {
+            "type": "PLAY_SFX",
+            "sfx": "jackpot_lit"
+          }
+        ]
+      },
+      {
+        "id": "pop_score",
+        "when": {
+          "event": "ON_SWITCH_HIT",
+          "id": "pop_*"
+        },
+        "do": [
+          {
+            "type": "ADD_SCORE",
+            "points": 1000
+          },
+          {
+            "type": "PLAY_SFX",
+            "sfx": "bumper"
+          }
+        ]
+      },
+      {
+        "id": "sling_score",
+        "when": {
+          "event": "ON_SWITCH_HIT",
+          "id": "sling_*"
+        },
+        "do": [
+          {
+            "type": "ADD_SCORE",
+            "points": 500
+          },
+          {
+            "type": "PLAY_SFX",
+            "sfx": "sling"
+          }
+        ]
+      },
+      {
+        "id": "inlane_score",
+        "when": {
+          "event": "ON_SWITCH_HIT",
+          "id": "inlane_*"
+        },
+        "do": [
+          {
+            "type": "ADD_SCORE",
+            "points": 2500
+          },
+          {
+            "type": "PLAY_SFX",
+            "sfx": "rollover"
+          }
+        ]
+      },
+      {
+        "id": "outlane_score",
+        "when": {
+          "event": "ON_SWITCH_HIT",
+          "id": "outlane_*"
+        },
+        "do": [
+          {
+            "type": "ADD_SCORE",
+            "points": 3500
+          },
+          {
+            "type": "PLAY_SFX",
+            "sfx": "rollover"
+          }
+        ]
+      },
+      {
+        "id": "top_lane_score",
+        "when": {
+          "event": "ON_SWITCH_HIT",
+          "id": "top_lane_*"
+        },
+        "do": [
+          {
+            "type": "ADD_SCORE",
+            "points": 3000
+          },
+          {
+            "type": "PLAY_SFX",
+            "sfx": "rollover"
+          }
+        ]
+      },
+      {
+        "id": "standup_target_score",
+        "when": {
+          "event": "ON_SWITCH_HIT",
+          "id": "*_target_*"
+        },
+        "do": [
+          {
+            "type": "ADD_SCORE",
+            "points": 2000
+          },
+          {
+            "type": "PLAY_SFX",
+            "sfx": "target"
+          }
+        ]
+      },
+      {
+        "id": "spinner_score",
+        "when": {
+          "event": "ON_SPINNER_SPIN",
+          "id": "spinner_arch"
+        },
+        "do": [
+          {
+            "type": "ADD_SCORE",
+            "points": 750
+          },
+          {
+            "type": "PLAY_SFX",
+            "sfx": "spinner"
+          }
+        ]
+      },
+      {
+        "id": "drop_target_score",
+        "when": {
+          "event": "ON_SWITCH_HIT",
+          "id": "drop_bank_alpha_*"
+        },
+        "do": [
+          {
+            "type": "ADD_SCORE",
+            "points": 1000
+          },
+          {
+            "type": "PLAY_SFX",
+            "sfx": "target"
+          }
+        ]
+      },
+      {
+        "id": "bank_complete_lock_already_lit",
+        "when": {
+          "event": "ON_TARGET_BANK_COMPLETE",
+          "id": "drop_bank_alpha"
+        },
+        "if": [
+          {
+            "lhs": "var.locks_lit",
+            "op": "==",
+            "rhs": true
+          }
+        ],
+        "do": [
+          {
+            "type": "ADD_SCORE",
+            "points": 10000
+          },
+          {
+            "type": "FIRE_SOLENOID",
+            "module": "drop_bank_alpha",
+            "port": "reset"
+          }
+        ]
+      },
+      {
+        "id": "bank_complete_light_lock",
+        "when": {
+          "event": "ON_TARGET_BANK_COMPLETE",
+          "id": "drop_bank_alpha"
+        },
+        "if": [
+          {
+            "lhs": "state",
+            "op": "==",
+            "rhs": "BaseMode"
+          },
+          {
+            "lhs": "var.locks_lit",
+            "op": "==",
+            "rhs": false
+          }
+        ],
+        "do": [
+          {
+            "type": "ADD_SCORE",
+            "points": 25000
+          },
+          {
+            "type": "SET_VAR",
+            "name": "locks_lit",
+            "value": true
+          },
+          {
+            "type": "SET_LAMP",
+            "lamp": "ramp_arrow",
+            "pattern": "BLINK_FAST",
+            "color": "#00FF88"
+          },
+          {
+            "type": "PLAY_SFX",
+            "sfx": "jackpot_lit"
+          },
+          {
+            "type": "SHOW_TEXT",
+            "text": "LOCK IS LIT",
+            "seconds": 3
+          },
+          {
+            "type": "FIRE_SOLENOID",
+            "module": "drop_bank_alpha",
+            "port": "reset"
+          }
+        ]
+      },
+      {
+        "id": "bank_complete_other_mode",
+        "when": {
+          "event": "ON_TARGET_BANK_COMPLETE",
+          "id": "drop_bank_alpha"
+        },
+        "if": [
+          {
+            "lhs": "state",
+            "op": "!=",
+            "rhs": "BaseMode"
+          },
+          {
+            "lhs": "var.locks_lit",
+            "op": "==",
+            "rhs": false
+          }
+        ],
+        "do": [
+          {
+            "type": "ADD_SCORE",
+            "points": 10000
+          },
+          {
+            "type": "FIRE_SOLENOID",
+            "module": "drop_bank_alpha",
+            "port": "reset"
+          }
+        ]
+      },
+      {
+        "id": "ramp_jackpot_in_frenzy",
+        "when": {
+          "event": "ON_SWITCH_HIT",
+          "id": "left_ramp.exit"
+        },
+        "if": [
+          {
+            "lhs": "state",
+            "op": "==",
+            "rhs": "JackpotFrenzy"
+          }
+        ],
+        "do": [
+          {
+            "type": "ADD_SCORE",
+            "points": 100000
+          },
+          {
+            "type": "SHOW_TEXT",
+            "text": "JACKPOT!",
+            "seconds": 2
+          },
+          {
+            "type": "PLAY_SFX",
+            "sfx": "jackpot_lit"
+          }
+        ]
+      },
+      {
+        "id": "ramp_start_frenzy",
+        "when": {
+          "event": "ON_SWITCH_HIT",
+          "id": "left_ramp.exit"
+        },
+        "if": [
+          {
+            "lhs": "var.locks_lit",
+            "op": "==",
+            "rhs": true
+          }
+        ],
+        "do": [
+          {
+            "type": "ADD_SCORE",
+            "points": 50000
+          },
+          {
+            "type": "SET_VAR",
+            "name": "locks_lit",
+            "value": false
+          },
+          {
+            "type": "ADD_VAR",
+            "name": "jackpots",
+            "delta": 1
+          },
+          {
+            "type": "SET_STATE",
+            "state": "JackpotFrenzy"
+          },
+          {
+            "type": "SET_LAMP",
+            "lamp": "ramp_arrow",
+            "pattern": "OFF"
+          },
+          {
+            "type": "SHOW_TEXT",
+            "text": "JACKPOT FRENZY",
+            "seconds": 3
+          },
+          {
+            "type": "PLAY_SFX",
+            "sfx": "jackpot_lit"
+          }
+        ]
+      },
+      {
+        "id": "ramp_basic",
+        "when": {
+          "event": "ON_SWITCH_HIT",
+          "id": "left_ramp.exit"
+        },
+        "if": [
+          {
+            "lhs": "state",
+            "op": "==",
+            "rhs": "BaseMode"
+          },
+          {
+            "lhs": "var.locks_lit",
+            "op": "==",
+            "rhs": false
+          }
+        ],
+        "do": [
+          {
+            "type": "ADD_SCORE",
+            "points": 5000
+          },
+          {
+            "type": "PLAY_SFX",
+            "sfx": "ramp"
+          }
+        ]
+      },
+      {
+        "id": "frenzy_lamps_on",
+        "when": {
+          "event": "ON_STATE_ENTER",
+          "id": "JackpotFrenzy"
+        },
+        "do": [
+          {
+            "type": "SET_LAMP",
+            "lamp": "frenzy_lamp_a",
+            "pattern": "BLINK_FAST",
+            "color": "#FF3366"
+          },
+          {
+            "type": "SET_LAMP",
+            "lamp": "frenzy_lamp_b",
+            "pattern": "BLINK_FAST",
+            "color": "#FF3366"
+          }
+        ]
+      },
+      {
+        "id": "frenzy_lamps_off",
+        "when": {
+          "event": "ON_STATE_ENTER",
+          "id": "BaseMode"
+        },
+        "do": [
+          {
+            "type": "SET_LAMP",
+            "lamp": "frenzy_lamp_a",
+            "pattern": "OFF"
+          },
+          {
+            "type": "SET_LAMP",
+            "lamp": "frenzy_lamp_b",
+            "pattern": "OFF"
+          }
+        ]
+      },
+      {
+        "id": "scoop_locked",
+        "when": {
+          "event": "ON_BALL_LOCKED",
+          "id": "lock_scoop"
+        },
+        "do": [
+          {
+            "type": "ADD_SCORE",
+            "points": 5000
+          },
+          {
+            "type": "SHOW_TEXT",
+            "text": "BALL LOCKED",
+            "seconds": 2
+          },
+          {
+            "type": "PLAY_SFX",
+            "sfx": "jackpot_lit"
+          }
+        ]
+      },
+      {
+        "id": "tilt_text",
+        "when": {
+          "event": "ON_TILT"
+        },
+        "do": [
+          {
+            "type": "SHOW_TEXT",
+            "text": "TILT",
+            "seconds": 5
+          },
+          {
+            "type": "PLAY_SFX",
+            "sfx": "tilt"
+          }
+        ]
+      }
+    ]
+  }
+}
